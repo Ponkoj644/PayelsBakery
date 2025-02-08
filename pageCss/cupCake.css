@@ -1,7 +1,7 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
 
 /* bootstrap icon */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
@@ -43,7 +43,7 @@ body {
   z-index: -1;
 } */
 .section_heading h1 {
-  font-family: "Nosifer", serif;
+  /* font-family: "Nosifer", serif; */
   font-size: clamp(2rem, 1.4286rem + 2.8571vw, 4rem);
   line-height: 3.5rem;
   font-weight: bold;
@@ -100,11 +100,55 @@ p {
 .cupCake_araa .section_heading h1 {
   font-weight: 800;
 }
+
+/* Items */
+
+.item_card {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 8px 24px 0 rgba(62, 62, 62, 0.37); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  /* height: 600px; */
+  min-height: 520px;
+
+
+}
+.item_card:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+.item_card_img {
+  /* min-width: 250px;
+  min-height: 300px; */
+}
+.item_card_img img {
+  min-width: 250px;
+  min-height: 350px;
+  object-fit: cover;
+}
+
+.item_card_txt {
+}
+
+.item_card_txt h2 {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
+.item_card_txt p {
+  font-size: 2rem;
+  /* line-height: 2.5rem; */
+  font-weight: bold;
+}
+
 /* Item container css */
 
 .items_container .item_img {
   max-width: 250px;
-
 }
 
 .items_container .item_img img {
@@ -131,13 +175,11 @@ p {
 }
 
 .cupCake_txt div p {
- 
 }
 
 .cupCake_txt:last-child {
   /* color: var(--text-red); */
   /* font-weight: 600; */
-
 }
 
 /* footer area start */
