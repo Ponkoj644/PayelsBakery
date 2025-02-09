@@ -20,7 +20,7 @@ body {
   font-family: "Montserrat", serif;
   max-width: 1440px;
   margin: 0 auto;
-  background-image: url("../images/cupCake_bg.jpg");
+  background-image: url("../images/Home_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,20 +30,7 @@ body {
   position: relative;
 }
 
-body::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(255, 38, 57, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  z-index: -1;
-}
 .section_heading h1 {
-  font-family: "Nosifer", serif;
   font-size: clamp(2rem, 1.4286rem + 2.8571vw, 4rem);
   line-height: 3.5rem;
   font-weight: bold;
@@ -63,12 +50,10 @@ p {
   margin-bottom: 1rem;
 }
 .my-navbar {
-  background: rgb(255, 38, 56, 0.7);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 0.5rem;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 .my-navbar .navbar-brand {
   color: var(--text-white);
@@ -99,51 +84,61 @@ p {
 }
 /* header css end */
 
+/* Whipped cake area start  */
 .whipped_cake_area .section_heading h1 {
-  color: var(--text-red);
-}
-/* Item container css */
-
-.items_container .item_img {
-  max-width: 500px;
-  /* height: 300px; */
-}
-
-.items_container .item_img img {
-  width: 100%;
-  object-fit: cover;
-  filter: drop-shadow(5px 10px 20px rgb(187, 34, 50, 0.6));
-}
-
-.items_container .item_txt h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--text-red);
-}
-
-.items_container .item_txt span {
-  /* font-size: 1.5rem; */
-  font-size: clamp(1.5rem, 1.0714rem + 2.1429vw, 3rem);
+  margin-top: 3rem;
   font-weight: 800;
-  color: var(--text-red);
+}
+
+/* Items */
+.item_card {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 8px 24px 0 rgba(62, 62, 62, 0.37); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  /* height: 600px; */
+  min-height: 500px;
+}
+.item_card:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+.item_card_img img {
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.item_card_txt h2 {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
+.item_card_txt p {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .whipped_cake_txt h3 {
-  font-size: 1rem;
-  color: var(--text-red);
-}
-
-.whipped_cake_txt div p {
-  color: #295961;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
 }
 
 .whipped_cake_txt:last-child {
-  color: var(--text-red);
   font-weight: 600;
 }
 
 /* Whipped cake Price css */
 
+.pricing {
+  background: rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0 8px 24px 0 rgba(62, 62, 62, 0.37); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
 .pricing_head {
   text-align: center;
 }
@@ -153,8 +148,8 @@ p {
   text-transform: uppercase;
   font-size: clamp(1.5rem, 1.2143rem + 1.4286vw, 2.5rem);
   font-weight: 600;
-  color: var(--text-red);
-  border-bottom: 2px solid red;
+  color: var(--text-white);
+  border-bottom: 2px solid var(--bg-white);
 }
 .cake_pricing {
   display: flex;
@@ -165,12 +160,11 @@ p {
 .cake_pricing .price_heading h3 {
   /* font-size: 1.3rem; */
   font-size: clamp(1rem, 0.6571rem + 0.7143vw, 1.3rem);
-
   font-weight: 700;
 }
 
 .cake_pricing h3 {
-  color: var(--text-blue);
+  color: var(--text-white);
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -178,23 +172,26 @@ p {
 .cake_pricing hr {
   display: block;
   opacity: 0.3;
-  border: 1px solid var(--bg-red);
+  border: 1px solid var(--bg-white);
   margin: 0;
   padding: 0;
 }
 
 .cake_pricing .cake_name h3 {
   font-size: clamp(1rem, 0.9429rem + 0.2857vw, 1.2rem);
+  line-height: 1.7rem;
 }
 
 .cake_pricing .cake_name p {
-  color: var(--text-red);
+  color: var(--text-white);
+  font-size: 0.8rem;
+  line-height: 1.3rem;
 }
 
 .cake_pricing .cake_price p {
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--text-blue);
+  color: var(--text-white);
 }
 
 /* footer area start */
@@ -211,7 +208,8 @@ p {
   background-color: black;
   opacity: 0.8;
   z-index: -1;
-  border-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 .footer_area .navbar-brand {
   font-size: 1.5rem;
