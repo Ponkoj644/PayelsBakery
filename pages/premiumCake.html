@@ -19,7 +19,9 @@
     <header>
       <section class="header_area">
         <!-- navbar 1 -->
-        <nav class="navbar navbar-expand-lg my-navbar py-3 py-lg-3 shadow">
+        <nav
+          class="navbar navbar-expand-lg my-navbar py-3 py-lg-3 shadow fixed-top"
+        >
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"
               ><span>P</span>ayel's Bekary</a
@@ -83,91 +85,116 @@
             </div>
           </div>
 
-          <div class="row my-3 my-lg-5">
-            <div class="items_container">
-              <!-- <div class="price_list my-3 my-lg-5">
-                <h3>Price List</h3>
-              </div> -->
+          <!-- Items start -->
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-5 mb-lg-5"
+          >
+            <!-- card 1 -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
+                <div class="item_card_img">
+                  <img
+                    src="../images/premium_vanila.png"
+                    alt="Butter vanila"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item_card_txt">
+                  <h2>Vanilla Moist Cake</h2>
+                  <p>3,200 TK</p>
+                </div>
+              </div>
+            </div>
 
-              <!-- Items -->
-              <!-- item 1 -->
-              <div class="col-12">
-                <div
-                  class="item d-flex flex-column flex-md-row align-items-center gap-3 gap-lg-5 py-3 py-lg-0"
-                >
-                  <div class="item_img">
-                    <img
-                      src="../images/premium_vanila.png"
-                      alt="Butter vanila"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item_txt">
-                    <h3>Vanilla Moist Cake</h3>
-                    <span>3,200 TK</span>
-                  </div>
+            <!-- card 2 -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
+                <div class="item_card_img">
+                  <img
+                    src="../images/premium_chocolat.png"
+                    alt="Butter Chocolate"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item_card_txt">
+                  <h2>Chocolate Moist Cake</h2>
+                  <p>3,600 TK</p>
                 </div>
               </div>
-              <!-- item 2 -->
-              <div class="col-12">
-                <div
-                  class="item d-flex flex-column flex-md-row flex-lg-row-reverse align-items-center gap-3 gap-lg-5 py-3 py-lg-0"
-                >
-                  <div class="item_img">
-                    <img
-                      src="../images/premium_chocolat.png"
-                      alt="Premium Chocolate"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item_txt">
-                    <h3>Chocolate Moist Cake</h3>
-                    <span>3,600 TK</span>
-                  </div>
-                </div>
-              </div>
-              <!-- item 3 -->
-              <div class="col-12">
-                <div
-                  class="item d-flex flex-column flex-md-row align-items-center gap-3 gap-lg-5 py-3 py-lg-0"
-                >
-                  <div class="item_img">
-                    <img
-                      src="../images/premim chocolat_2.png"
-                      alt="premim chocolat"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item_txt">
-                    <h3>Chocolate Mud Cake</h3>
-                    <span>3,800 TK</span>
-                  </div>
-                </div>
-              </div>
+            </div>
 
-              <!-- item 4 -->
-              <div class="col-12">
+            <!-- card 3 -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
+                <div class="item_card_img">
+                  <img
+                    src="../images/premim chocolat_2.png"
+                    alt="Red velvet"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item_card_txt">
+                  <h2>Chocolate Mud Cake</h2>
+                  <p>3,800 TK</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
+                <div class="item_card_img">
+                  <img
+                    src="../images/premium_carrot_cake.png"
+                    alt="Butter Cake"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item_card_txt">
+                  <h2>Carrot Cake</h2>
+                  <p>3,500 TK</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Last Card -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
                 <div
-                  class="item d-flex flex-column flex-md-row-reverse align-items-center gap-3 gap-lg-3 py-5 py-md-3 py-lg-0"
+                  class="premium_cake_txt d-flex flex-column gap-3 align-items-center justify-content-center"
                 >
-                  <div class="item_img">
-                    <img
-                      src="../images/premium_carrot_cake.png"
-                      alt="carrot_cake"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item_txt">
-                    <h3>Carrot Cake</h3>
-                    <span>3,500 TK</span>
+                  <h3 class="border border-1 d-inline p-2 border-white rounded">
+                    RICH BUTTER-BASED CAKE, CREAMY TEXTURE
+                  </h3>
+
+                  <p class="choice">CHOICE OF FILLING</p>
+
+                  <div class="d-flex flex-column gap-1">
+                    <p>WE USE UNSALTED ANCHOR & FARM FRESH BUTTER</p>
+
+                    <p>
+                      CHANGE BUTTER: PURE BUTTER OR LURPAK BUTTER <br />
+                      *ADDITIONAL CHARGES APPLY
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Items end -->
 
           <!-- Pricing  -->
-          <div class="row mt-3 mt-lg-5 bg-white p-3 p-lg-5 rounded-3 bg-opacity-50">
+          <div class="my-3 my-lg-5 p-3 p-lg-5 rounded-3 pricing">
             <div class="pricing_head py-5">
               <h4>Our Pricing</h4>
             </div>
@@ -301,22 +328,6 @@
                 </div>
               </div>
               <hr />
-              
-            </div>
-          </div>
-
-          <!-- Additional text -->
-          <div class="row py-5 text-center">
-            <div class="whipped_cake_txt premium_cake_txt">
-              <h3 class="border border-1 d-inline p-2 border-danger rounded">
-                RICH BUTTER-BASED CAKE, CREAMY TEXTURE
-              </h3>
-              <div class="py-4">
-                <p><strong>CHOICE OF FILLING</strong></p>
-              </div>
-              <p class="mb-2">WE USE UNSALTED ANCHOR & FARM FRESH BUTTER</p>
-              CHANGE BUTTER: PURE BUTTER OR LURPAK BUTTER *ADDITIONAL CHARGES
-              APPLY.
             </div>
           </div>
         </div>

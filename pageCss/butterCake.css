@@ -132,46 +132,6 @@ p {
 .butter_cake_txt:last-child {
   font-weight: 600;
 }
-
-/* Item container css */
-.items_container .item_img {
-  max-width: 500px;
-}
-
-.items_container .item_img img {
-  width: 100%;
-  object-fit: cover;
-  /* filter: drop-shadow(5px 10px 20px rgb(187, 34, 50, 0.6)); */
-}
-
-.items_container .item_txt h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--text-white);
-}
-
-.items_container .item_txt span {
-  /* font-size: 1.5rem; */
-  font-size: clamp(1.5rem, 1.0714rem + 2.1429vw, 3rem);
-  font-weight: 800;
-  color: var(--text-white);
-}
-
-.butter_cake_txt h3 {
-  font-size: clamp(0.75rem, 0.4821rem + 0.7143vw, 1.125rem);
-  /* font-size: 1rem; */
-  color: var(--text-white);
-}
-
-.butter_cake_txt div p {
-  /* color: #295961; */
-}
-
-.butter_cake_txt:last-child {
-  color: var(--text-white);
-  font-weight: 600;
-}
-
 /* Butter cake Price css */
 
 .pricing {
@@ -251,7 +211,8 @@ p {
   background-color: black;
   opacity: 0.8;
   z-index: -1;
-  border-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 .footer_area .navbar-brand {
   font-size: 1.5rem;
