@@ -19,7 +19,9 @@
     <header>
       <section class="header_area">
         <!-- navbar 1 -->
-        <nav class="navbar navbar-expand-lg my-navbar py-3 py-lg-3 shadow">
+        <nav
+          class="navbar navbar-expand-lg my-navbar py-3 py-lg-3 shadow fixed-top"
+        >
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"
               ><span>P</span>ayel's Bekary</a
@@ -83,93 +85,109 @@
             </div>
           </div>
 
-          <div class="row my-3 my-lg-5">
-            <div class="items_container">
-              <!-- <div class="price_list my-3 my-lg-5">
-                <h3>Price List</h3>
-              </div> -->
+          <!-- Items start -->
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-5 mb-lg-5"
+          >
+            <!-- card 1 -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
+                <div class="item_card_img">
+                  <img
+                    src="../images/butter_cake_vanilla.png"
+                    alt="Butter vanila"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item_card_txt">
+                  <h2>Vanilla Cake</h2>
+                  <p>1,200 TK</p>
+                </div>
+              </div>
+            </div>
 
-              <!-- Items -->
-              <!-- item 1 -->
-              <div class="col-12">
-                <div
-                  class="item d-flex flex-column flex-md-row align-items-center gap-3 gap-lg-5 py-3 py-lg-0"
-                >
-                  <div class="item_img">
-                    <img
-                      src="../images/butter_cake_vanilla.png"
-                      alt="Butter vanila"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item_txt">
-                    <h3>Vanilla Cake</h3>
-                    <span>1,200 TK</span>
-                  </div>
+            <!-- card 2 -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
+                <div class="item_card_img">
+                  <img
+                    src="../images/butter_cake_chocolate.png"
+                    alt="Butter Chocolate"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item_card_txt">
+                  <h2>Chocolate Cake</h2>
+                  <p>1,400 TK</p>
                 </div>
               </div>
-              <!-- item 2 -->
-              <div class="col-12">
-                <div
-                  class="item d-flex flex-column flex-md-row flex-lg-row-reverse align-items-center gap-3 gap-lg-5 py-3 py-lg-0"
-                >
-                  <div class="item_img">
-                    <img
-                      src="../images/butter_cake_chocolate.png"
-                      alt="Butter Chocolate"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item_txt">
-                    <h3>Chocolate Cake</h3>
-                    <span>1,400 TK</span>
-                  </div>
-                </div>
-              </div>
-              <!-- item 3 -->
-              <div class="col-12">
-                <div
-                  class="item d-flex flex-column flex-md-row align-items-center gap-3 gap-lg-5 py-3 py-lg-0"
-                >
-                  <div class="item_img">
-                    <img
-                      src="../images/wipped_red_velvet.png"
-                      alt="Red velvet"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item_txt">
-                    <h3>Red Velvet</h3>
-                    <span>1,200 TK</span>
-                  </div>
-                </div>
-              </div>
+            </div>
 
-              <!-- item 4 -->
-              <div class="col-12">
+            <!-- card 3 -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
+                <div class="item_card_img">
+                  <img
+                    src="../images/wipped_red_velvet.png"
+                    alt="Red velvet"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item_card_txt">
+                  <h2>Red Velvet</h2>
+                  <p>1,200 TK</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
+                <div class="item_card_img">
+                  <img
+                    src="../images/whipped_Black_Forest.png"
+                    alt="Butter Cake"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item_card_txt">
+                  <h2>Black Forest Cake</h2>
+                  <p>1,200 TK</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Last Card -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
                 <div
-                  class="item d-flex flex-column flex-md-row-reverse align-items-center gap-3 gap-lg-3 py-5 py-md-3 py-lg-0"
+                  class="butter_cake_txt d-flex flex-column gap-3 align-items-center justify-content-center"
                 >
-                  <div class="item_img">
-                    <img
-                      src="../images/whipped_Black_Forest.png"
-                      alt="Vanilla CupCake"
-                      class="img-fluid"
-                    />
+                  <h3 class="border border-1 d-inline p-2 border-white rounded">
+                    SOFT SPONGE BASE FLUFFY WHIPPED CREAM
+                  </h3>
+                  <div>
+                    <p>CHOICE OF FILLING</p>
                   </div>
-                  <div class="item_txt">
-                    <h3>Black Forest Cake</h3>
-                    <span>1,200 TK</span>
-                  </div>
+                  <p>WE USE EVERWHIP FOR OUR WHIP CREAM</p>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Items end -->
 
           <!-- Pricing  -->
-          <div
-            class="row mt-3 mt-lg-5 bg-white p-3 p-lg-5 rounded-3 bg-opacity-50"
-          >
+          <div class="row mt-3 mt-lg-5 p-3 p-lg-5 rounded-3 pricing">
             <div class="pricing_head py-5">
               <h4>Our Pricing</h4>
             </div>
@@ -354,7 +372,7 @@
           <!-- Additional text -->
           <div class="row py-5 text-center">
             <div class="butter_cake_txt">
-              <h3 class="border border-1 d-inline p-2 border-danger rounded">
+              <h3 class="border border-1 d-inline p-2 rounded">
                 SOFT SPONGE BASE SMOOTH, GLOSSY CREAM
               </h3>
               <div class="py-4">
