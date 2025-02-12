@@ -140,7 +140,6 @@ p {
 
 .pricing {
   background: rgba(255, 255, 255, 0.2);
-  /* box-shadow: 0 8px 24px 0 rgba(62, 62, 62, 0.37); */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
@@ -216,7 +215,7 @@ p {
   opacity: 0.8;
   z-index: -1;
   border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 .footer_area .navbar-brand {
   font-size: 1.5rem;

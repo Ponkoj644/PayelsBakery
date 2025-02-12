@@ -19,7 +19,9 @@
     <header>
       <section class="header_area">
         <!-- navbar 1 -->
-        <nav class="navbar navbar-expand-lg my-navbar py-3 py-lg-3 shadow">
+        <nav
+          class="navbar navbar-expand-lg my-navbar py-3 py-lg-3 shadow fixed-top"
+        >
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"
               ><span>P</span>ayel's Bekary</a
@@ -83,88 +85,111 @@
             </div>
           </div>
 
-          <div class="row my-3 my-lg-5">
-            <div class="items_container">
-              <!-- item 1 -->
-              <div class="col-12">
-                <div
-                  class="item d-flex flex-column flex-md-row align-items-center gap-3 gap-lg-5 py-3 py-lg-0"
-                >
-                  <div class="item_img">
-                    <img
-                      src="../images/baked_cake.png"
-                      alt="Baked cake "
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item_txt">
-                    <h3>Chocolate Cheese Cake</h3>
-                    <span>2,000 TK</span>
-                  </div>
+          <!-- Items start -->
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-5 mb-lg-5"
+          >
+            <!-- card 1 -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
+                <div class="item_card_img">
+                  <img
+                    src="../images/baked_cake.png"
+                    alt="Baked cake "
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item_card_txt">
+                  <h2>Chocolate Cheese Cake</h2>
+                  <p>2,000 TK</p>
                 </div>
               </div>
-              <!-- item 2 -->
-              <div class="col-12">
-                <div
-                  class="item d-flex flex-column flex-md-row flex-lg-row-reverse align-items-center gap-3 gap-lg-5 py-3 py-lg-0"
-                >
-                  <div class="item_img">
-                    <img
-                      src="../images/baked_cake2.png"
-                      alt="Blueberry"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item_txt">
-                    <h3>Blueberry/Strawberry</h3>
-                    <span>2,000 TK</span>
-                  </div>
-                </div>
-              </div>
-              <!-- item 3 -->
-              <div class="col-12">
-                <div
-                  class="item d-flex flex-column flex-md-row align-items-center gap-3 gap-lg-5 py-3 py-lg-0"
-                >
-                  <div class="item_img">
-                    <img
-                      src="../images/baked_cake3.png"
-                      alt="Butterscotch Cheese"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item_txt">
-                    <h3>Butterscotch Cheese Cake</h3>
-                    <span>2,000 TK</span>
-                  </div>
-                </div>
-              </div>
+            </div>
 
-              <!-- item 4 -->
-              <div class="col-12">
+            <!-- card 2 -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
+                <div class="item_card_img">
+                  <img
+                    src="../images/baked_cake2.png"
+                    alt="Blueberry"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item_card_txt">
+                  <h2>Blueberry/Strawberry</h2>
+                  <p>2,000 TK</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
+                <div class="item_card_img">
+                  <img
+                    src="../images/baked_cake3.png"
+                    alt="Butterscotch Cheese"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item_card_txt">
+                  <h2>Butterscotch Cheese Cake</h2>
+                  <p>2,000 TK</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
+                <div class="item_card_img">
+                  <img
+                    src="../images/baked_cake4.png"
+                    alt="Bake cake"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item_card_txt">
+                  <h2>Oreo Cheese Cake</h2>
+                  <p>2,200 TK</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Last Card -->
+            <div class="col-12 col-lg-4 col-md-6 text-center">
+              <div
+                class="item_card p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
+              >
                 <div
-                  class="item d-flex flex-column flex-md-row-reverse align-items-center gap-3 gap-lg-3 py-5 py-md-3 py-lg-0"
+                  class="baked_cake_txt d-flex flex-column gap-3 align-items-center justify-content-center"
                 >
-                  <div class="item_img">
-                    <img
-                      src="../images/baked_cake4.png"
-                      alt="Bake cake"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item_txt">
-                    <h3>Oreo Cheese Cake</h3>
-                    <span>2,200 TK</span>
+                  <h3 class="border border-1 d-inline p-2 border-white rounded">
+                    RICH BUTTER-BASED CAKE, CREAMY TEXTURE
+                  </h3>
+
+                  <p class="choice">CHOICE OF FILLING</p>
+
+                  <div class="d-flex flex-column gap-1">
+                    <p>WE USE ALMARAI / GRAND'OR / BEGA CREAM CHEESE</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Items end -->
 
           <!-- Pricing  -->
-          <div
-            class="row mt-3 mt-lg-5 bg-white bg-opacity-50 p-3 p-lg-5 rounded-3"
-          >
+          <div class="my-3 my-lg-5 p-3 p-lg-5 rounded-3 pricing">
             <div class="pricing_head py-5">
               <h4>Our Pricing</h4>
             </div>
@@ -330,27 +355,14 @@
               <hr />
             </div>
           </div>
-
-          <!-- Additional text -->
-          <div class="row py-5 text-center">
-            <div class="baked_cake_txt">
-              <h3 class="border border-1 d-inline p-2 border-danger rounded">
-                RICH BUTTER-BASED CAKE, CREAMY TEXTURE
-              </h3>
-              <div class="py-4">
-                <p><strong>CHOICE OF FILLING</strong></p>
-              </div>
-              <p class="mb-2">WE USE ALMARAI / GRAND'OR / BEGA CREAM CHEESE.</p>
-            </div>
-          </div>
         </div>
       </section>
-      <!-- cup cake section end -->
+      <!-- Baked cake section end -->
     </main>
 
     <!-- footer stert -->
     <footer>
-      <section class="footer_area py-3">
+      <section class="footer_area py-3 py-lg-5">
         <div class="container-fluid">
           <div
             class="row row-cols-md-2 align-items-center justify-content-between"

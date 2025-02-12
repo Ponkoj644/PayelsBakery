@@ -151,7 +151,8 @@ p {
   background-color: black;
   opacity: 0.5;
   z-index: -1;
-  border-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .footer_area .navbar-brand {
