@@ -4,8 +4,6 @@
 /* bootstrap icon */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-
-
 /* variables */
 :root {
   --text-white: #ffffff;
@@ -14,6 +12,7 @@
   --text-light-blue: #6e8e93;
   --bg-white: #ffffff;
   --bg-red: #ff2639;
+  --transition-300: all 0.3s ease-in-out;
 }
 /* common */
 body {
@@ -27,9 +26,10 @@ body {
   min-height: 100vh;
   color: var(--text-white);
   overflow-x: hidden;
+  --transition-300: all ease-in-out;
 }
 .section_heading h1 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   font-size: clamp(1.5rem, 0.6667rem + 4.1667vw, 4rem);
   line-height: 3.5rem;
   font-weight: bold;
