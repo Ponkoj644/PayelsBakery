@@ -108,6 +108,10 @@ p {
   transform: translateY(-2px);
 }
 
+.item_card_img {
+  max-width: 300px;
+}
+
 .item_card_img img {
   min-width: 100%;
   object-fit: cover;

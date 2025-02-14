@@ -4,6 +4,8 @@
 /* bootstrap icon */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+
+
 /* variables */
 :root {
   --text-white: #ffffff;
@@ -49,7 +51,8 @@ p {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 .my-navbar .navbar-brand {
   color: var(--text-white);
@@ -124,7 +127,6 @@ p {
 .condition_card_img i {
   font-size: 3rem;
 }
-
 
 .condition_card_txt h2 {
   font-size: 1.2rem;
