@@ -102,7 +102,14 @@
                 data-aos-easing="linear"
                 data-aos-duration="1600"
               >
-                <button class="btn text-white border">contact</button>
+                <button
+                  class="btn text-white border"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Contact
+                </button>
               </div>
             </div>
           </div>
@@ -122,6 +129,14 @@
           >
             <div class="section_heading text-center">
               <h1>TERMS & CONDITIONS</h1>
+              <button
+                class="btn text-white border"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                contact
+              </button>
             </div>
           </div>
 
@@ -352,6 +367,118 @@
       </section>
     </footer>
     <!-- footer end -->
+
+    <!-- contact modal start -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Hi Visitors &#128075;
+            </h1>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- form start -->
+            <div>
+              <form>
+                <p class="mb-3">
+                  I'm here to take your lovely advice. &#128522;
+                </p>
+                <!-- name -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control bg-transparent text-white"
+                    id="floatingInput"
+                    placeholder="Full Name"
+                    required
+                  />
+                  <label for="floatingInput">Full Name</label>
+                </div>
+
+                <!-- email -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control bg-transparent text-white"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    required
+                  />
+                  <label for="floatingInput">Email address</label>
+                  <label for="validationCustom01" class="form-label"></label>
+                </div>
+
+                <!-- message -->
+                <div class="form-floating">
+                  <textarea
+                    class="form-control bg-transparent text-white mb-3"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                    required
+                  ></textarea>
+                  <label for="floatingTextarea2">Message</label>
+                </div>
+
+                <!-- button -->
+                <div class="d-flex align-items-center justify-content-end">
+                  <button class="btn text-white border" type="submit">
+                    Send
+                    <i class="bi bi-send ms-2"></i>
+                  </button>
+                </div>
+              </form>
+              <!-- form end -->
+            </div>
+
+            <!-- social media -->
+            <div class="social mt-3 mt-lg-0">
+              <h3>Also In :</h3>
+              <ul class="p-0">
+                <li class="list-unstyled d-flex gap-3">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <p>See you again...</p>
+            <button
+              type="button"
+              class="btn text-white border"
+              data-bs-dismiss="modal"
+            >
+              Bye
+            </button>
+            <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact modal end -->
 
     <!-- bootstrap js  -->
     <script

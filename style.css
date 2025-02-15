@@ -73,6 +73,7 @@ p {
   color: var(--text-white);
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 
 .my-navbar .nav-link:hover {
@@ -101,20 +102,6 @@ p {
   opacity: 0.8;
   transform: translateY(-2px);
 }
-
-/* .condition_card .card-overy img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70px;
-  height: 70px;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-} */
-
-/* .condition_card:hover .card-overy img {
-  opacity: 0.7;
-} */
 
 .condition_card_img {
   width: 3rem;
@@ -191,6 +178,9 @@ p {
   font-weight: normal;
 }
 
+.footer_area .copyright p {
+  font-size: clamp(0.6875rem, 0.5625rem + 0.625vw, 1.125rem);
+}
 .footer_area .copyright p:last-child {
   font-size: 12px;
 }
@@ -203,3 +193,65 @@ p {
   margin: 1.5rem 0;
 }
 /* footer area end */
+
+/* contact modal css*/
+.modal-body form input,
+.modal-body form textarea {
+  border: transparent;
+  border-top: 1px solid var(--bg-white);
+  border-bottom: 1px solid var(--bg-white);
+}
+
+.modal-body form input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.modal-body form textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.modal-body form label {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* modal social media css */
+.modal-body {
+  background-image: url("./images/Home_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-body .social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.modal-body h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.modal-body .social ul {
+  margin: 0;
+}
+
+.modal-body .social a {
+  text-decoration: none;
+  color: var(--text-white);
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.modal-body .social a:hover {
+  transform: translateY(-5px);
+  border-bottom: 2px solid var(--text-white);
+}
+
+.modal-body .social a i {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
